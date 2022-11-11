@@ -1,25 +1,38 @@
-import MainLayout from './components/layouts/MainLayout';
-import DocumentTitle from 'react-document-title';
+import MainLayout from './components/layouts/MainLayout'
+import DocumentTitle from 'react-document-title'
 
 function Home() {
   return (
     <MainLayout>
         <DocumentTitle title='Home' />
-        <div>
-            <div className="jumbotron">
-                <h1 className="display-6">หน้าหลัก</h1>
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1} aria-label="Slide 2" />
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={2} aria-label="Slide 3" />
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="assets/images/slide/food1.jpg" className="d-block w-100" alt="Slide 1" />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro facilis ducimus explicabo odio deleniti minus recusandae quaerat. Placeat, id commodi explicabo fuga vitae quo aliquid praesentium doloremque ipsam dolor.</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro facilis ducimus explicabo odio deleniti minus recusandae quaerat. Placeat, id commodi explicabo fuga vitae quo aliquid praesentium doloremque ipsam dolor.</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt eligendi quia expedita unde consectetur exercitationem aliquid maiores, nobis perspiciatis modi blanditiis quidem similique esse fuga! Quia modi impedit corrupti inventore similique exercitationem animi eos facilis aliquam iste, eligendi dolore nisi voluptates rem aspernatur dolor repellendus voluptate ex debitis harum id voluptatibus. Totam in et optio blanditiis nam, autem cumque dolores, molestiae laudantium similique quibusdam voluptas fugiat quidem quae non alias, error atque neque. Omnis suscipit saepe impedit maiores, molestias ex illo veniam velit quae aspernatur, similique ipsam reprehenderit dicta autem totam officia, neque dolore ea odit magnam voluptas. Harum ipsum corrupti fuga repellendus sed obcaecati eos nesciunt nemo aliquid maxime labore iste deserunt qui, magnam quasi earum fugit alias.</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro facilis ducimus explicabo odio deleniti minus recusandae quaerat. Placeat, id commodi explicabo fuga vitae quo aliquid praesentium doloremque ipsam dolor.</p>
-
+            <div className="carousel-item">
+              <img src="assets/images/slide/food2.jpg" className="d-block w-100" alt="Slide 2" />
+            </div>
+            <div className="carousel-item">
+              <img src="assets/images/slide/food3.jpg" className="d-block w-100" alt="Slide 3" />
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true" />
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true" />
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
     </MainLayout>
   )
 }
 
-export default Home;
+export default Home
