@@ -13,13 +13,13 @@ function Home() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="assets/images/slide/food1.jpg" className="d-block w-100" alt="Slide 1" />
+              <img src="assets/images/slide/food1.WebP" className="d-block w-100" alt="Slide 1" />
             </div>
             <div className="carousel-item">
-              <img src="assets/images/slide/food2.jpg" className="d-block w-100" alt="Slide 2" />
+              <img src="assets/images/slide/food2.WebP" className="d-block w-100" alt="Slide 2" />
             </div>
             <div className="carousel-item">
-              <img src="assets/images/slide/food3.jpg" className="d-block w-100" alt="Slide 3" />
+              <img src="assets/images/slide/food3.WebP" className="d-block w-100" alt="Slide 3" />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
